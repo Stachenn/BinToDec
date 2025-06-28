@@ -1,12 +1,12 @@
 # Pozyskanie liczby
 def decToBin():
     while True:
-        userBin = input("Type ur dec num : ")
+        userBin = input("Type dec num : ")
     
         try:
             userBinInt = int(userBin)
         except ValueError:
-            print("Ur num is not int")
+            print("Selected number isnt a int")
         else:
             break
 
@@ -45,12 +45,12 @@ def decToBin():
 
 def binToDec():
     while True:
-        userBin = input("Type ur bin num : ")
+        userBin = input("Bin number to convert : ")
     
         try:
             userBinInt = int(userBin)
         except ValueError:
-            print("Ur num is not int")
+            print("Number isnt int")
         else:
             break
     j = 1
@@ -89,7 +89,7 @@ def binToDec():
 
 def main():
     while True:
-        print("\n| [C]Stachenn all rights reserved | \n\nWhat u wanna do? \n 1 - Bin to dec \n 2 - Dec to bin \n 3 - Exit (pls dont do it u can be there forever)")
+        print("\n| [C]Stachenn all rights reserved | \n\nChose a option? \n 1 - Bin to dec \n 2 - Dec to bin \n 3 - Exit")
         choice = input()
         if choice == "1":
             print(binToDec())
@@ -98,9 +98,8 @@ def main():
             print(decToBin())
             break
         if choice == "3":
-            print("Thank for using Stacehnn software goodbye, have a nice day/night!")
             exit(0)
         else:
-            print("Ur choice is not in option")
+            print("Chosen choice is not in option")
 while True:
     main()
